@@ -10,3 +10,5 @@ node_modules/
 # OS-specific files
 .DS_Store  # For macOS
 Thumbs.db  # For Windows
+
+firebase-admin-sdk.json
