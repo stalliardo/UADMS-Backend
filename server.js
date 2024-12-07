@@ -20,7 +20,7 @@ app.get("/api", (req, res) => {
 // Connect to MongoDB
 const connectDB = require('./config/db');
 // TODO add the mongo connection string to the db file then re-instate
-// connectDB();
+connectDB();
 
 // Start the server
 const PORT = process.env.PORT || 5000;
