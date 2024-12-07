@@ -11,7 +11,10 @@ app.use(express.json());  // For parsing JSON requests
 
 // Import Routes
 const deviceRoutes = require('./routes/deviceRoutes');
+const userRoutes = require('./routes/userRoutes');
+
 app.use('/api/devices', deviceRoutes);  // Base route for devices
+app.use('/api/users', userRoutes);  // Base route for devices
 
 app.get("/api", (req, res) => {
     res.json({ message: "Hello Darren - this is the backend" })
